@@ -19,7 +19,7 @@ bar = st.progress(0)
 for i in range(100):
     latest_iteration.text(f'Iteration {i+1}')
     bar.progress(i+1)
-    time.sleep(0.1)
+    time.sleep(0.01)
 
 "Done!!!"
 
@@ -88,7 +88,8 @@ option = st.selectbox(
 
 st.write("Interactive Widgets")
 text = st.text_input("あなたの趣味を教えてください")
-"あなたの趣味は ", text, "です"
+st.write(f"あなたの趣味は {text} です")
+
 
 condition= st.slider("調子は？", 0,100,50)
 "調子",condition
