@@ -7,7 +7,21 @@ from PIL import Image
 import time
 
 
-st.title("Streamlit 超入門")
+st.title("Streamlit Practice")
+
+st.write("Progress bar")
+"Start!!"
+
+latest_iteration = st. empty()
+bar = st.progress(0)
+
+
+for i in range(100):
+    latest_iteration.text(f'Iteration {i+1}')
+    bar.progress(i+1)
+    time.sleep(0.1)
+
+"Done!!!"
 
 st.write("DataFrame")
 df = pd.DataFrame({
@@ -103,16 +117,3 @@ expander2.write("内容を書く2")
 
 
 
-st.write("Progress bar")
-"Start!!"
-
-latest_iteration = st. empty()
-bar = st.progress(0)
-
-
-for i in range(100):
-    latest_iteration.text(f'Iteration {i+1}')
-    bar.progress(i+1)
-    time.sleep(0.1)
-
-"Done!!!"
