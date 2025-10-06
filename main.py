@@ -12,7 +12,7 @@ st.title("Streamlit Practice")
 st.write("Progress bar")
 "Start!!"
 
-latest_iteration = st. empty()
+latest_iteration = st.empty()
 bar = st.progress(0)
 
 
@@ -106,7 +106,7 @@ left_column, right_column = st.columns(2)
 
 button = left_column.button("右カラムに文字を表示")
 if button:
-    right_column.write("右カラム")
+    right_column.write("This is 右カラム")
 
 
 expander = st.expander("問い合わせ")
