@@ -114,7 +114,9 @@ expander = st.expander("問い合わせ")
 expander.write("内容を書く")
 
 expander2 = st.expander("問い合わせ2")
-expander2.write("内容を書く2")
+user_input = expander2.text_input("ここに入力してください")
+expander2.write(f"入力内容: {user_input}")
+
 
 
 
